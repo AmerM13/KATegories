@@ -27,7 +27,7 @@ function getDateString(offsetDays = 0): string {
 function App() {
   const { category, loading } = useSheetCategory();
   const { recordGuess, getPercentage, fetchFinalPercentagesForDate, saveResult, fetchLivePercentile } = usePercentages();
-  const { gameState, submitGuess, totalPlayers, liveScore, livePercentile } = useGame(category, { recordGuess, getPercentage, saveResult, fetchLivePercentile });
+  const { gameState, submitGuess, liveScore, livePercentile } = useGame(category, { recordGuess, getPercentage, saveResult, fetchLivePercentile });
 
   const [showRules, setShowRules] = useState(() => !localStorage.getItem(RULES_SEEN_KEY));
   const [message, setMessage] = useState<string | null>(null);
