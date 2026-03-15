@@ -2,7 +2,6 @@ interface GameOverScreenProps {
   liveScore: number;
   livePercentile: number;
   correctGuesses: number;
-  totalPlayers: number;
   wrongGuess?: string;
 }
 
@@ -10,7 +9,6 @@ export default function GameOverScreen({
   liveScore,
   livePercentile,
   correctGuesses,
-  totalPlayers,
   wrongGuess,
 }: GameOverScreenProps) {
   return (

@@ -127,7 +127,6 @@ function App() {
               liveScore={liveScore}
               livePercentile={livePercentile}
               correctGuesses={gameState.guesses.length}
-              totalPlayers={totalPlayers}
               wrongGuess={gameState.wrongGuess}
             />
           )}
