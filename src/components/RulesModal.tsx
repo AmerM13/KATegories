@@ -27,7 +27,7 @@ export default function RulesModal({ isOpen, onClose }: RulesModalProps) {
           </div>
           <div className="flex gap-3 items-start">
             <span className="text-kat-orange font-black text-base leading-snug">4</span>
-            <p className="leading-snug">A player qualifies if they played <strong>at least 1 game</strong> with that team or teammate.</p>
+            <p className="leading-snug">For team/teammate categories, a player qualifies if they played <strong>at least 1 game</strong> together.</p>
           </div>
           <div className="flex gap-3 items-start">
             <span className="text-red-500 font-black text-base leading-snug">!</span>
