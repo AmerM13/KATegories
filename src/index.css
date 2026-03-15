@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Network';
+  src: url('/Network.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-kat-blue: #1e3a5f;
+  --color-kat-blue-light: #2a5a8f;
+  --color-kat-orange: #f97316;
+  --color-kat-orange-light: #fb923c;
+  --color-kat-black: #111111;
+  --color-kat-white: #ffffff;
+  --color-kat-gray: #f3f4f6;
+  --color-kat-gray-dark: #6b7280;
+  --color-kat-beige: #faf8f5;
+  --color-kat-beige-dark: #ede8e0;
+  --font-family-display: "Inter", system-ui, sans-serif;
+  --font-family-title: "Network", system-ui, sans-serif;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #faf8f5;
+  color: var(--color-kat-black);
+  margin: 0;
+  --dot-size: 0.12rem;
+  --bg-size: 1rem;
+  background-image:
+    radial-gradient(circle at center, #e8e3da var(--dot-size), transparent 0),
+    radial-gradient(circle at center, #e8e3da var(--dot-size), transparent 0);
+  background-size: var(--bg-size) var(--bg-size);
+  background-position: 0px 0px, 0.5rem 0.5rem;
+  background-repeat: repeat;
+}
+
+@utility bg-shine-size {
+  background-size: 300% 300%;
+}
+
+@keyframes shine {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  to { background-position: 0% 0%; }
+}
+
+.animate-shine {
+  animation: shine var(--duration, 14s) infinite linear;
+}
+
+@keyframes bar-fill {
+  from { width: 0%; }
+}
+
+.animate-bar-fill {
+  animation: bar-fill 0.6s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out forwards;
+}

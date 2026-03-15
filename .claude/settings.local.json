@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(npm create:*)",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(npm --version)",
+      "Bash(cp -r kategories-temp/* .)",
+      "Bash(cp kategories-temp/.gitignore .)",
+      "Bash(cp kategories-temp/.eslintrc.cjs .)",
+      "Bash(rm -rf kategories-temp)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:www.basketball-reference.com)",
+      "Bash(\"/c/Users/User/Desktop/Claude First/public/favicon.svg\":*)",
+      "Bash(npx tsc:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cmd.exe /c \"where npm\")",
+      "Bash(npm run:*)",
+      "WebFetch(domain:poeltl.nbpa.com)",
+      "Read(//c/Users/User/Downloads/**)",
+      "Bash(unzip -o studio.zip -d studio_extracted)",
+      "Bash(cp \"C:\\\\Users\\\\User\\\\Downloads\\\\studio_extracted\\\\Studio.ttf\" \"C:\\\\Users\\\\User\\\\Desktop\\\\Claude First\\\\public\\\\Studio.ttf\")",
+      "Bash(cp \"C:\\\\Users\\\\User\\\\Downloads\\\\studio_extracted\\\\Studio-Italic.ttf\" \"C:\\\\Users\\\\User\\\\Desktop\\\\Claude First\\\\public\\\\Studio-Italic.ttf\")",
+      "Bash(unzip -o \"C:\\\\Users\\\\User\\\\Downloads\\\\network_2.zip\" -d \"C:\\\\Users\\\\User\\\\Downloads\\\\network_extracted\")"
+    ]
+  }
+}
