@@ -28,7 +28,7 @@ function getDateString(offsetDays = 0): string {
 function App() {
   const { category, loading } = useSheetCategory();
   const { recordGuess, getPercentage, fetchFinalPercentagesForDate, saveResult, fetchLivePercentile } = usePercentages();
-  const { gameState, submitGuess, liveScore, livePercentile } = useGame(category, { recordGuess, getPercentage, saveResult, fetchLivePercentile });
+  const { gameState, submitGuess, liveScore, livePercentile, totalPlayers } = useGame(category, { recordGuess, getPercentage, saveResult, fetchLivePercentile });
 
   const [showRules, setShowRules] = useState(true);
   const [message, setMessage] = useState<string | null>(null);
@@ -129,6 +129,7 @@ function App() {
               liveScore={liveScore}
               livePercentile={livePercentile}
               correctGuesses={gameState.guesses.length}
+              totalPlayers={totalPlayers}
               wrongGuess={gameState.wrongGuess}
             />
           )}

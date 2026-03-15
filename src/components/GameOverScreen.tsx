@@ -2,6 +2,7 @@ interface GameOverScreenProps {
   liveScore: number;
   livePercentile: number;
   correctGuesses: number;
+  totalPlayers: number;
   wrongGuess?: string;
 }
 
@@ -9,6 +10,7 @@ export default function GameOverScreen({
   liveScore,
   livePercentile,
   correctGuesses,
+  totalPlayers,
   wrongGuess,
 }: GameOverScreenProps) {
   return (
@@ -31,7 +33,7 @@ export default function GameOverScreen({
             <p className="text-xs font-semibold text-kat-gray-dark uppercase tracking-widest mt-1">Final Score</p>
           </div>
           <div className="flex-1 text-center py-4">
-            <p className="text-4xl font-black text-kat-blue">{correctGuesses}</p>
+            <p className="text-4xl font-black text-kat-blue">{correctGuesses}<span className="text-lg font-bold text-kat-gray-dark">/{totalPlayers}</span></p>
             <p className="text-xs font-semibold text-kat-gray-dark uppercase tracking-widest mt-1">Correct</p>
           </div>
         </div>
