@@ -10,6 +10,7 @@ import GuessList from './components/GuessList';
 import GameOverScreen from './components/GameOverScreen';
 import RulesModal from './components/RulesModal';
 import YesterdayModal from './components/YesterdayModal';
+import PrivacyModal from './components/PrivacyModal';
 import { ShineBorder } from './components/ui/shine-border';
 import type { GameState } from './types';
 
@@ -33,6 +34,7 @@ function App() {
   const [message, setMessage] = useState<string | null>(null);
   const [yesterdayResult, setYesterdayResult] = useState<{ score: number; correctGuesses: number } | null>(null);
   const [showYesterday, setShowYesterday] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
 
   // On load: check for yesterday's completed game and compute final score
   useEffect(() => {
@@ -135,7 +137,18 @@ function App() {
         </div>
       </ShineBorder>
 
+      {/* Footer */}
+      <div className="text-center mt-4 pb-4">
+        <button
+          onClick={() => setShowPrivacy(true)}
+          className="text-xs text-kat-gray-dark hover:text-kat-blue transition-colors underline underline-offset-2"
+        >
+          Privacy Policy
+        </button>
+      </div>
+
       <RulesModal isOpen={showRules} onClose={handleCloseRules} />
+      <PrivacyModal isOpen={showPrivacy} onClose={() => setShowPrivacy(false)} />
 
       {yesterdayResult && (
         <YesterdayModal
