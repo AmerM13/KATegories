@@ -30,7 +30,7 @@ function App() {
   const { recordGuess, getPercentage, fetchFinalPercentagesForDate, saveResult, fetchLivePercentile } = usePercentages();
   const { gameState, submitGuess, liveScore, livePercentile } = useGame(category, { recordGuess, getPercentage, saveResult, fetchLivePercentile });
 
-  const [showRules, setShowRules] = useState(() => !localStorage.getItem(RULES_SEEN_KEY));
+  const [showRules, setShowRules] = useState(true);
   const [message, setMessage] = useState<string | null>(null);
   const [yesterdayResult, setYesterdayResult] = useState<{ score: number; correctGuesses: number } | null>(null);
   const [showYesterday, setShowYesterday] = useState(false);
