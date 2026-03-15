@@ -26,6 +26,10 @@ export default function RulesModal({ isOpen, onClose }: RulesModalProps) {
             <p className="leading-snug">Each correct guess shows the <strong>% of today's players</strong> who guessed that player. <strong>Rarer players score more</strong> — if only 5% guessed them, you get 95 points. Scores update live throughout the day.</p>
           </div>
           <div className="flex gap-3 items-start">
+            <span className="text-kat-orange font-black text-base leading-snug">4</span>
+            <p className="leading-snug">A player qualifies if they played <strong>at least 1 game</strong> with that team or teammate.</p>
+          </div>
+          <div className="flex gap-3 items-start">
             <span className="text-red-500 font-black text-base leading-snug">!</span>
             <p className="leading-snug">One <strong>wrong guess</strong> ends the game.</p>
           </div>
