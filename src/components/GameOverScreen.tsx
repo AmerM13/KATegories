@@ -29,7 +29,7 @@ export default function GameOverScreen({
         {/* Stats */}
         <div className="flex border-b border-gray-200">
           <div className="flex-1 text-center py-4 border-r border-gray-200">
-            <p className="text-4xl font-black text-kat-orange">{Number.isInteger(liveScore) ? liveScore : liveScore.toFixed(2)}</p>
+            <p className={`${liveScore >= 10000 ? 'text-2xl' : liveScore >= 1000 ? 'text-3xl' : 'text-4xl'} font-black text-kat-orange`}>{Number.isInteger(liveScore) ? liveScore : liveScore.toFixed(2)}</p>
             <p className="text-xs font-semibold text-kat-gray-dark uppercase tracking-widest mt-1">Final Score</p>
           </div>
           <div className="flex-1 text-center py-4">
