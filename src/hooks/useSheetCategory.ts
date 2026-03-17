@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { categories as fallbackCategories } from '../data/categories';
+import { scheduledCategories } from '../data/scheduledCategories';
 import type { Category } from '../types';
 
 const SHEET_URL = import.meta.env.VITE_SHEETS_CSV_URL as string | undefined;
@@ -57,7 +58,7 @@ function buildCategoryFromRow(row: string[]): Category | null {
 export function useSheetCategory(): { category: Category; loading: boolean } {
   const today = getTodayString();
   const cacheKey = `kategories-sheet-${today}`;
-  const fallback = fallbackCategories[0];
+  const fallback = scheduledCategories[today] ?? fallbackCategories[0];
 
   const [category, setCategory] = useState<Category>(() => {
     try {
