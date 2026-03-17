@@ -58,9 +58,8 @@ export function usePercentages() {
   const recordGuess = useCallback(async (playerName: string) => {
     if (!supabase) return;
     const sessionId = getSessionId();
-    await supabase.from('guess_events').upsert(
-      { game_date: today, player_name: playerName, session_id: sessionId },
-      { onConflict: 'game_date,player_name,session_id' }
+    await supabase.from('guess_events').insert(
+      { game_date: today, player_name: playerName, session_id: sessionId }
     );
     const pcts = await fetchPercentagesForDate(today);
     if (Object.keys(pcts).length > 0) setLivePercentages(pcts);
