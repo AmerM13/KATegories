@@ -106,7 +106,7 @@ function App() {
         borderWidth={2}
         borderRadius={16}
         duration={10}
-        className="!w-[70vw] !min-w-0 mx-auto rounded-2xl !bg-white !p-0 overflow-hidden min-h-[calc(100vh-4rem)] border-4 border-kat-orange"
+        className="!w-[92vw] sm:!w-[70vw] !min-w-0 mx-auto rounded-2xl !bg-white !p-0 overflow-hidden min-h-[calc(100vh-4rem)] border-4 border-kat-orange"
       >
         <div className="w-full px-4 pb-8">
           <Header onShowRules={() => setShowRules(true)} />
