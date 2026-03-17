@@ -61,6 +61,8 @@ export function useSheetCategory(): { category: Category; loading: boolean } {
   const fallback = scheduledCategories[today] ?? fallbackCategories[0];
 
   const [category, setCategory] = useState<Category>(() => {
+    // Scheduled categories always take priority over cache
+    if (scheduledCategories[today]) return scheduledCategories[today];
     try {
       const cached = localStorage.getItem(cacheKey);
       if (cached) return JSON.parse(cached) as Category;
