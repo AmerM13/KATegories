@@ -16,9 +16,7 @@ export default function GuessRow({ guess, index, displayPercentage }: GuessRowPr
         {guess.playerName}
       </span>
       <span className="font-bold text-kat-orange text-base tabular-nums">
-        {Number.isInteger(displayPercentage)
-          ? displayPercentage
-          : displayPercentage.toFixed(2)}%
+        {displayPercentage.toFixed(2)}%
       </span>
     </div>
   );

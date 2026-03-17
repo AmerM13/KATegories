@@ -40,7 +40,7 @@ async function fetchPercentagesForDate(date: string): Promise<Record<string, num
 
   const pcts: Record<string, number> = {};
   for (const [name, count] of Object.entries(counts)) {
-    pcts[name] = Math.round((count / uniqueSessions) * 10000) / 100;
+    pcts[name] = parseFloat(((count / uniqueSessions) * 100).toFixed(2));
   }
   return pcts;
 }
