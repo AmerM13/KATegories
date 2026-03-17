@@ -10,7 +10,7 @@ function makePlayers(names: string[]) {
 }
 
 export const scheduledCategories: Record<string, Category> = {
-  '2026-03-17': {
+  '2026-03-18': {
     category: 'Karl-Anthony Towns Teammates',
     players: makePlayers([
       'Gorgui Dieng', 'Andrew Wiggins', 'Tyus Jones', 'Anthony Edwards', 'Naz Reid',
@@ -40,7 +40,7 @@ export const scheduledCategories: Record<string, Category> = {
     simulatedPercentiles: defaultPercentiles,
   },
 
-  '2026-03-18': {
+  '2026-03-19': {
     category: 'Averaged 5.0+ RPG in 2024-25 (Min. 10 Games)',
     players: makePlayers([
       'Shai Gilgeous-Alexander', 'Giannis Antetokounmpo', 'Nikola Jokic', 'Luka Doncic',
@@ -74,7 +74,7 @@ export const scheduledCategories: Record<string, Category> = {
     simulatedPercentiles: defaultPercentiles,
   },
 
-  '2026-03-19': {
+  '2026-03-20': {
     category: 'Played for the Clippers in the 2010s',
     players: makePlayers([
       'Cole Aldrich', 'Al-Farouq Aminu', 'Alan Anderson', 'Jeff Ayres', 'Matt Barnes',
@@ -107,7 +107,7 @@ export const scheduledCategories: Record<string, Category> = {
     simulatedPercentiles: defaultPercentiles,
   },
 
-  '2026-03-20': {
+  '2026-03-21': {
     category: 'Averaged 10.0+ PPG in 2024-25 (Min. 10 Games)',
     players: makePlayers([
       'Shai Gilgeous-Alexander', 'Giannis Antetokounmpo', 'Nikola Jokic', 'Luka Doncic',
@@ -154,7 +154,7 @@ export const scheduledCategories: Record<string, Category> = {
     simulatedPercentiles: defaultPercentiles,
   },
 
-  '2026-03-21': {
+  '2026-03-22': {
     category: 'Jae Crowder Teammates',
     players: makePlayers([
       'Kelly Olynyk', 'Jonas Jerebko', 'Marcus Smart', 'Isaiah Thomas', 'Avery Bradley',
@@ -199,7 +199,7 @@ export const scheduledCategories: Record<string, Category> = {
     simulatedPercentiles: defaultPercentiles,
   },
 
-  '2026-03-22': {
+  '2026-03-23': {
     category: 'NBA 50th Anniversary Team',
     players: makePlayers([
       'Kareem Abdul-Jabbar', 'Nate Archibald', 'Paul Arizin', 'Charles Barkley', 'Rick Barry',
@@ -216,7 +216,7 @@ export const scheduledCategories: Record<string, Category> = {
     simulatedPercentiles: defaultPercentiles,
   },
 
-  '2026-03-23': {
+  '2026-03-24': {
     category: 'Played for the Magic in the 2020s',
     players: makePlayers([
       'Al-Farouq Aminu', 'Cole Anthony', 'D.J. Augustin', 'Dwayne Bacon', 'Mo Bamba',
@@ -237,7 +237,7 @@ export const scheduledCategories: Record<string, Category> = {
     simulatedPercentiles: defaultPercentiles,
   },
 
-  '2026-03-24': {
+  '2026-03-25': {
     category: 'Played for Both the Rockets and Mavericks',
     players: makePlayers([
       'Corey Brewer', 'Scott Brooks', 'Chucky Brown', 'Sterling Brown', 'Mark Bryant',
